@@ -193,7 +193,7 @@
 						<p>
 							Silahkan melakukan Pembayaran <strong>Rp. <?php echo number_format($detail['total_pembelian'])?></strong>
 							Ke <br>
-							<strong>BANK KITA 197-99123-42222-3242 AN. Rara.D.R</strong>
+							<strong>BANK KITA 197-9913-42222-3242 AN. Rara.D.R</strong>
 							
 						</p>
 					</div>
