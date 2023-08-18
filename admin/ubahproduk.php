@@ -1,3 +1,6 @@
+<?php
+$koneksi = mysqli_connect("localhost", "root", "", "tokobuku");
+?>
 <h2>Ubah Produk</h2>
 
 <?php

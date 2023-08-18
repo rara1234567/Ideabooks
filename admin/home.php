@@ -1,6 +1,6 @@
 <?php
 
-	$koneksi = new mysqli("localhost","root","","tokobuku");
+	include_once("koneksi.php");
 ?>
 <h2>Selamat Datang Admin <?php echo $_SESSION['admin']['nama_lengkap']; ?></h2>
 

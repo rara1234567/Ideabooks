@@ -1,4 +1,7 @@
 <?php
+$koneksi = mysqli_connect("localhost", "root", "", "tokobuku");
+?>
+<?php
 
 	$delete=$koneksi->query("DELETE FROM pelanggan WHERE id_pelanggan='$_GET[id]'");
 	echo "<script> alert('Pelanggan Terhapus'); </script>";

@@ -2,7 +2,8 @@
     //account dimasukkan kedalam session
     session_start();
     
-    $koneksi = new mysqli("localhost","root","","tokobuku");
+    include_once("koneksi.php");
+    $database = new database();
 
     //harus login
     if (!isset($_SESSION['admin'])) {
@@ -10,6 +11,7 @@
         echo "<script> location='login.php'; </script>";
         exit();
     }
+    
 
 ?>
 <!DOCTYPE html>
@@ -91,10 +93,10 @@ font-size: 16px;"><a href="index.php?hal=logout" class="btn btn-danger square-bt
                             include 'ubahpelanggan.php';
                         }
                         elseif ($_GET['hal']=="detail") {
-                            include'detail.php';
+                            include 'detail.php';
                         }
                         elseif ($_GET['hal']=="tambahproduk") {
-                            include'tambahproduk.php';
+                            include 'tambahproduk.php';
                         }
                         elseif ($_GET['hal']=="hapusproduk") {
                             include 'hapusproduk.php';

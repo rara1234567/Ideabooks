@@ -1,3 +1,6 @@
+<?php
+$koneksi = mysqli_connect("localhost", "root", "", "tokobuku");
+?>
 <h2>Data Pembayaran</h2>
 
 <?php 

@@ -1,4 +1,5 @@
 resep_produk<?php 
+$koneksi = mysqli_connect("localhost", "root", "", "tokobuku");
 
 $ambil = $koneksi->query("SELECT * FROM produk WHERE id_produk='$_GET[id]'");
 $pecah = $ambil->fetch_assoc();

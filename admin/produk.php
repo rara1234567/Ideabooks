@@ -1,3 +1,6 @@
+<?php
+$koneksi = mysqli_connect("localhost", "root", "", "tokobuku");
+?>
 <h2>Data Buku</h2>
 
 
@@ -22,8 +25,8 @@ font-size: 16px;"><a href="index.php?hal=tambahproduk" class="btn btn-primary">T
 	</thead>
 
 	<tbody>
-		<?php $nomor=1; ?>
-		<?php $ambil=$koneksi->query(" SELECT * FROM produk"); ?>
+		<?php $nomor = 1; ?>
+		<?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
 		<?php while($pecah=$ambil->fetch_assoc()) { ?>
 		<tr>
 			<td> <?php echo $nomor; ?></td>
